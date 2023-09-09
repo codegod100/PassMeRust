@@ -2,8 +2,18 @@
 name = "PassMeRust"
 version = "0.1.0"
 edition = "2021"
+exclude = ["index.node"]
+
+
+[lib]
+crate-type = ["cdylib"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 rust-crypto = "0.2.36"
+
+[dependencies.neon]
+version = "0.10"
+default-features = false
+features = ["napi-6"]
