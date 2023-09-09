@@ -1,5 +1,5 @@
 import {test,expect} from "bun:test"
-import {check_password} from "./passme.js"
+import {check_password} from "."
 test("test password",()=>{
     expect(check_password("hello universe")).toBe("Password strength: Very Strong")
     expect(check_password("yolo")).toBe("Password strength: Weak")
