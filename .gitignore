@@ -11,3 +11,5 @@ Cargo.lock
 
 # Dependency directories
 /vendor/
+/node_modules
+index.node
