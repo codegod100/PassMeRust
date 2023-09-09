@@ -23,8 +23,6 @@ fn check_password(mut cx: FunctionContext) -> JsResult<JsString> {
 
 #[neon::main]
 fn main(mut cx: ModuleContext) -> NeonResult<()> {
-    println!("in main");
-
     cx.export_function("check_password", check_password)?;
     Ok(())
 }
