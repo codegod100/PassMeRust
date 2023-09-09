@@ -1,5 +1,5 @@
 import {test,expect} from "bun:test"
-import {check_password} from "."
+const {check_password} = require("./index.node")
 test("test password",()=>{
     expect(check_password("hello universe")).toBe("Password strength: Very Strong")
     expect(check_password("yolo")).toBe("Password strength: Weak")

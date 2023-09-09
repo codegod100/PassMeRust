@@ -1,8 +1,8 @@
 {
   "name": "pass_me_rust",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
-  "main": "passme.js",
+  "main": "index.node",
   "scripts": {
     "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics --future-incompat-report",
     "build-debug": "npm run build --",
